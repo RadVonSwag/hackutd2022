@@ -6,6 +6,7 @@ const Home = () => {
    return ( 
     <View style={styles.container}>
         <Text style={styles.centerText}>What Do {'\n'} You Want To {'\n'} Eat Today?</Text>
+        <Button title = "Dev Button" onPress={() => navigation.navigate("DevScreen")}/>
     </View>
   );
 }
