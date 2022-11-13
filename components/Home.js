@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
 
-const Home = () => {
+const Home = ({navigation}) => {
    return ( 
     <View style={styles.container}>
 <Text style={styles.topText}>What are you<Text style={styles.centerText}> {"\n"}craving</Text>   <Text style={styles.bottomText}>{"\n"}today?</Text> </Text>
