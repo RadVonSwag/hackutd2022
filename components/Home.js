@@ -5,7 +5,7 @@ import { Button, StyleSheet, Text, View } from "react-native";
 const Home = () => {
    return ( 
     <View style={styles.container}>
-        <Text style={styles.centerText}>What Do {'\n'} You Want To {'\n'} Eat Today?</Text>
+<Text style={styles.topText}>What are you<Text style={styles.centerText}> {"\n"}craving</Text>   <Text style={styles.bottomText}>{"\n"}today?</Text> </Text>
         <Button title = "Dev Button" onPress={() => navigation.navigate("DevScreen")}/>
     </View>
   );
@@ -18,11 +18,29 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
       },
+// Yellow
+    topText: {
+        fontSize: 35,
+        fontWeight: 'bold',
+        textAlign: 'left',
+        color: '#FCBF49'
+      },
+
+// Orange
     centerText: {
-      fontSize: 40,
+        fontSize: 35,
+        fontWeight: 'bold',
+        textAlign: 'left',
+        color: '#F77F00'
+      },
+// Red
+    bottomText: {
+      fontSize: 35,
       fontWeight: 'bold',
-      textAlign: 'center',
+      textAlign: 'left',
+      color: '#D62828'
     }
-  });
+
+});
 
 export default Home;
